@@ -27,6 +27,14 @@ git push -f
 # 修改提交时间
 git commit --date="May 7 9:05:20 2016 +0800" -am "提交"
 
+# drop 某条commit
+git rebase -i  commit_A   # commit_A 是要删除的commit 前一条
+# pick commit_B
+# pick commit_C
+######
+# 讲 pick commit_B 的pick 改成drop ，并保存，push -f 即可
+
+
 ```
 
 ---
